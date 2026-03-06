@@ -1,13 +1,15 @@
-import Greeting from "./components/Greeting";
-import UserStatus from "./components/UserStatus";
-import Weather from "./components/Weather";
+import IconComponent from "./components/IconComponent";
+import ProfileCard from "./components/ProfileCard";
+import StyledCard from "./components/StyledCard";
+import { FaCartShopping } from "react-icons/fa6";
 
 const App = () => {
   return (
     <div>
-      <Weather temperature={20} />
-      <UserStatus loggedIn={true} isadmin={true} />
-      <Greeting timeOfDay="morning" />
+      <StyledCard />
+      <ProfileCard />
+      <FaCartShopping />
+      <IconComponent />
     </div>
   );
 };
